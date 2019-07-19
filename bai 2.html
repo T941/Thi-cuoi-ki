@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function tryRemoveArray(arr,n) {
+      for(let i=0;i<arr.length;i++){
+          if (n===arr[i]){
+              arr.splice(i,1)
+          };
+      };
+      return arr;
+  }; let newArr=[12,6,3,7,21,5,7];
+  let n=parseInt(prompt("Nhập vào n : "));
+  let resul=tryRemoveArray(newArr,n);
+  document.write(resul);
+</script>
+</body>
+</html>
